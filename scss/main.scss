@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.contenedor{
+    padding: 20px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: red;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.navbar{
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    .logo{
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        grid-column: 1 / 3;
+        justify-content: space-around;
+    }
+    .menu{
+        font-size: small;
+        margin: 5px;
+        grid-column: 3 / 7;
+        display: flex;
+        justify-content: space-around;
+    }
+    a{
+        font-family:'Courier New', Courier, monospace;
+        margin: 5px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        transition: all 0.5s ease; 
+        justify-content: space-around;
+    }
+    li{
+        list-style: none;
+    }
+    a:hover{
+        padding: 5px 10px;
+        background: white;
+        color: red;
+        border-radius: 15px;
+    }
+}
+.textos-header{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: none;
+    h1{
+        font-family: 'faster one', cursive;
+        font-size: 50px;
+        color: red;
+    }
+}
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    .imagen-sobre-nosotros {
+        width: 48%;
+        border-radius: 10%;
+    }
+    .contenido-textos {
+        width: 48%;
+        p{
+            font-family:'Courier New', Courier, monospace;
+            color: white;
+            padding: 0px 0px 30px 15px;
+            font-weight: 300;
+            text-align: justify;
+        }
+    }          
+}
+.galeria-fech{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .foto-fech{
+        width: 30%;
+        margin-bottom: 30px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
+        border-radius: 5%;
+        img{
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .hover-fotos{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            transform: scale(1);
+            background: hsla(0, 91%, 27%, 0.7);
+            transition: transform .5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img{
+                width: 25%;
+                height: 20%;
+            }
+        }
+    }
+}
+.foto-fech:hover .hover-fotos{
+    transform: scale(0); 
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    .card{
+        background: #ff0000;
+        margin: 10px;
+        display: flex;
+        width: 100%;
+        height: 150px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        box-shadow: 0 0 6px 0 rgba(255, 0, 0, 0.774);
+        img{
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 1px solid rgb(255, 0, 0);
+            border-radius: 10%;
+            display: block;
+        }
+        .contenido-texto-card{
+            width: 100%;
+            padding: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+    }
+}
+.musica-cont{
+    padding-bottom: 10px;
+    .musica-contenedor{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .musica-ind{
+            width: 45%;
+            text-align: center;
+            iframe{
+                width: 80%;
+                margin: 5px;
+                border-radius: 15%;
+            }
+            h3{
+                font-family:'Courier New', Courier, monospace;
+                margin: 10px 0;
+                color: white;
+            }
+            p{
+                font-family:'Courier New', Courier, monospace;
+                color: white;
+                font-weight: 300;
+                text-align: justify;
+            }
+        }
+    }
+}
+footer{
+    background: #ff0000;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    .contenedor-footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        .content-foo{
+            text-align: center;
+            h4{
+                font-family:'Courier New', Courier, monospace;
+                color: white;
+                margin: 5px;
+            }
+            p{
+                font-family:'Courier New', Courier, monospace;
+                margin: 5px;
+            }
+        }
+    }
+}
