@@ -92,38 +92,45 @@ body {
   margin-top: 60px;
 }
 
-.textos-header {
-  display: flex;
-  height: 250px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: none;
-}
-.textos-header h1 {
-  font-family: "faster one", cursive;
-  font-size: 50px;
-  color: red;
-}
-
-.contenedor-sobre-nosotros {
+.galeria-fech {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.contenedor-sobre-nosotros .imagen-sobre-nosotros {
+.galeria-fech .foto-fech {
   width: 30%;
-  height: 30%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
+  border-radius: 5%;
 }
-.contenedor-sobre-nosotros .contenido-textos {
-  width: 48%;
+.galeria-fech .foto-fech img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
-.contenedor-sobre-nosotros .contenido-textos p {
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-  padding: 0px 0px 30px 15px;
-  font-weight: 300;
-  text-align: justify;
+.galeria-fech .foto-fech .hover-fotos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(1);
+  background: hsla(0deg, 91%, 27%, 0.7);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.galeria-fech .foto-fech .hover-fotos img {
+  width: 25%;
+  height: 20%;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.foto-fech:hover .hover-fotos {
+  transform: scale(0);
+}
+
+/*# sourceMappingURL=styles2.css.map */

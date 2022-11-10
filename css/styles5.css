@@ -92,38 +92,46 @@ body {
   margin-top: 60px;
 }
 
-.textos-header {
-  display: flex;
-  height: 250px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+form {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+form p {
+  color: white;
+  margin-bottom: 20px;
   text-align: center;
-  background-color: none;
+  font-family: "Courier New", Courier, monospace;
 }
-.textos-header h1 {
-  font-family: "faster one", cursive;
-  font-size: 50px;
-  color: red;
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
 }
-
-.contenedor-sobre-nosotros {
-  display: flex;
-  justify-content: space-evenly;
+form textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
 }
-.contenedor-sobre-nosotros .imagen-sobre-nosotros {
-  width: 30%;
-  height: 30%;
-}
-.contenedor-sobre-nosotros .contenido-textos {
-  width: 48%;
-}
-.contenedor-sobre-nosotros .contenido-textos p {
+form .boton {
+  background: red;
+  width: 20%;
+  margin-left: 40%;
   font-family: "Courier New", Courier, monospace;
   color: white;
-  padding: 0px 0px 30px 15px;
-  font-weight: 300;
-  text-align: justify;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
-/*# sourceMappingURL=styles.css.map */
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles5.css.map */

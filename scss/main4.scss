@@ -1,0 +1,32 @@
+@import"./layout/nav";
+@import"./layout/footer";
+@import"./pages/estructura";
+
+.musica-cont{
+    padding-bottom: 10px;
+    .musica-contenedor{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .musica-ind{
+            width: 45%;
+            text-align: center;
+            iframe{
+                width: 80%;
+                margin: 5px;
+                border-radius: 5%;
+            }
+            h3{
+                font-family:'Courier New', Courier, monospace;
+                margin: 10px 0;
+                color: white;
+            }
+            p{
+                font-family:'Courier New', Courier, monospace;
+                color: white;
+                font-weight: 300;
+                text-align: justify;
+            }
+        }
+    }
+}
