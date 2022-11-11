@@ -19,3 +19,8 @@ body{
     margin-bottom: 60px;
     margin-top: 60px;
 }
+@media(max-width: 300px) {
+    .contenedor{
+        width: 100%;
+    }
+}

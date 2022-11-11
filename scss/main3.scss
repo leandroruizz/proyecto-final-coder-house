@@ -17,18 +17,22 @@
         box-shadow: 0 0 6px 0 rgba(255, 0, 0, 0.774);
         img{
             margin: 10px;
-            width: 100px;
-            height: 100px;
+            width: 80px;
             object-fit: cover;
             border: 1px solid rgb(255, 0, 0);
             border-radius: 10%;
-            display: block;
+            display:block;
         }
         .contenido-texto-card{
-            width: 90%;
-            padding: 0px;
+            width: auto;
+            height: auto;
             font-family: 'Courier New', Courier, monospace;
             color: white;
+            display: block;
+            h3, p{
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
         }
     }
 }

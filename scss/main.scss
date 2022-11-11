@@ -25,8 +25,7 @@
     text-align: center;
     background-color: none;
     .imagen-sobre-nosotros {
-        width: 30%;
-        height: 30%;
+        height: 100%;
     }
     .contenido-textos {
         width: 48%;
@@ -39,4 +38,8 @@
         }
     }          
 }
-
+@media(max-width: 300px) {
+    .imagen-sobre-nosotros{
+        width: 100%;
+    }
+}
