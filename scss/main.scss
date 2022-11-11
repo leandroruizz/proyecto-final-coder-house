@@ -4,7 +4,7 @@
 
 .textos-header{
     display: flex;
-    height: 250px;
+    height: 300px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@
     text-align: center;
     background-color: none;
     .imagen-sobre-nosotros {
-        height: 100%;
+        height: 80%;
     }
     .contenido-textos {
         width: 48%;
@@ -38,8 +38,8 @@
         }
     }          
 }
-@media(max-width: 300px) {
+@media(max-width: 480px) {
     .imagen-sobre-nosotros{
-        width: 100%;
+        width: 50%;
     }
 }

@@ -50,7 +50,7 @@
 footer {
   background: #ff0000;
   padding: 60px 0 30px 0;
-  margin: auto;
+  margin-bottom: 0;
   overflow: hidden;
 }
 footer .contenedor-footer {
@@ -72,7 +72,7 @@ footer .contenedor-footer .content-foo p {
   color: white;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
   footer {
     width: 100%;
   }
@@ -101,9 +101,14 @@ body {
   margin-top: 60px;
 }
 
+@media (max-width: 300px) {
+  .contenedor {
+    width: 100%;
+  }
+}
 .textos-header {
   display: flex;
-  height: 250px;
+  height: 300px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -126,7 +131,7 @@ body {
   background-color: none;
 }
 .contenedor-sobre-nosotros .imagen-sobre-nosotros {
-  height: 100%;
+  height: 80%;
 }
 .contenedor-sobre-nosotros .contenido-textos {
   width: 48%;
@@ -139,9 +144,9 @@ body {
   text-align: justify;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
   .imagen-sobre-nosotros {
-    width: 100%;
+    width: 50%;
   }
 }
 

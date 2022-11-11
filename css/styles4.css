@@ -50,7 +50,7 @@
 footer {
   background: #ff0000;
   padding: 60px 0 30px 0;
-  margin: auto;
+  margin-bottom: 0;
   overflow: hidden;
 }
 footer .contenedor-footer {
@@ -72,7 +72,7 @@ footer .contenedor-footer .content-foo p {
   color: white;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
   footer {
     width: 100%;
   }
@@ -113,6 +113,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-x: scroll;
 }
 .musica-cont .musica-contenedor .musica-ind {
   width: 45%;
@@ -120,7 +121,7 @@ body {
 }
 .musica-cont .musica-contenedor .musica-ind iframe {
   width: 80%;
-  margin: 5px;
+  margin: 10px;
   border-radius: 5%;
 }
 .musica-cont .musica-contenedor .musica-ind h3 {

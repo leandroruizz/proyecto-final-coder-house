@@ -8,12 +8,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        overflow-x: scroll;
         .musica-ind{
             width: 45%;
             text-align: center;
             iframe{
                 width: 80%;
-                margin: 5px;
+                margin: 10px;
                 border-radius: 5%;
             }
             h3{
