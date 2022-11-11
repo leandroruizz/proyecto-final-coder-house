@@ -8,7 +8,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        overflow-x: scroll;
         .musica-ind{
             width: 45%;
             text-align: center;
@@ -29,5 +28,10 @@
                 text-align: justify;
             }
         }
+    }
+}
+@media(max-width: 480px) {
+    .musica-contenedor{
+    overflow-x: scroll;
     }
 }

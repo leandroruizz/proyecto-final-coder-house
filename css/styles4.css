@@ -113,7 +113,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow-x: scroll;
 }
 .musica-cont .musica-contenedor .musica-ind {
   width: 45%;
@@ -134,6 +133,12 @@ body {
   color: white;
   font-weight: 300;
   text-align: justify;
+}
+
+@media (max-width: 480px) {
+  .musica-contenedor {
+    overflow-x: scroll;
+  }
 }
 
 /*# sourceMappingURL=styles4.css.map */
