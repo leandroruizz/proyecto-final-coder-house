@@ -17,18 +17,17 @@
   justify-content: space-around;
 }
 .navbar .menu {
-  font-size: small;
-  margin: 5px 40px 5px 40px;
   grid-column: 3/7;
   display: flex;
   justify-content: space-around;
 }
 .navbar a {
-  font-family: "Courier New", Courier, monospace;
-  margin: 5px;
+  font-family: "Monument Extended", sans-serif;
+  margin: 3px;
+  font-size: 70%;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: lighter;
   transition: all 0.5s ease;
   justify-content: space-around;
 }
@@ -42,11 +41,6 @@
   border-radius: 15px;
 }
 
-@media (min-width: 480px) {
-  .menu {
-    font-size: x-small;
-  }
-}
 footer {
   background: #ff0000;
   padding: 60px 0 30px 0;
@@ -67,7 +61,7 @@ footer .contenedor-footer .content-foo .imagen-footer {
   width: 10%;
 }
 footer .contenedor-footer .content-foo p {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Monument Extended", sans-serif;
   margin: 5px;
   color: white;
 }
@@ -94,7 +88,7 @@ body {
 
 .titulo {
   color: red;
-  font-family: "faster one";
+  font-family: "Monument Extended", sans-serif;
   font-size: 40px;
   text-align: center;
   margin-bottom: 60px;
@@ -124,12 +118,12 @@ body {
   border-radius: 5%;
 }
 .musica-cont .musica-contenedor .musica-ind h3 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Monument Extended", sans-serif;
   margin: 10px 0;
   color: white;
 }
 .musica-cont .musica-contenedor .musica-ind p {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Monument Extended", sans-serif;
   color: white;
   font-weight: 300;
   text-align: justify;
