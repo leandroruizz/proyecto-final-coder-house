@@ -25,14 +25,14 @@
             </ul>
         </nav>
     </header>    
-    <form action="" id="contacto">
+    <form action="enviar.php" id="contacto" method="post">
         <h2 class="titulo">contactanos</h2>
         <p>si queres ser parte del line up llena el formulario ( dj / vj )</p>
-        <input type="text" name="nombre" placeholder="nombre">
-        <input type="text" name="correo" placeholder="correo">
-        <input type="text" name="instagram" placeholder="instagram">
-        <textarea name="mensaje" placeholder="escribir mensaje"></textarea>
-        <input type="button" value="enviar" class="boton" id="boton">
+        <input type="text" name="nombre" placeholder="nombre" required>
+        <input type="text" name="correo" placeholder="correo" required>
+        <input type="text" name="instagram" placeholder="instagram" required>
+        <textarea name="mensaje" placeholder="escribir mensaje" required></textarea>
+        <input type="submit" value="enviar" class="boton" id="boton">
     </form>
     <footer>
         <div class="contenedor-footer">
