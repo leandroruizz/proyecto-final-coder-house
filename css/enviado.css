@@ -1,0 +1,107 @@
+.navbar {
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  justify-content: space-around;
+}
+.navbar .logo {
+  margin: 5px 5px 5px 5px;
+  width: auto;
+  height: 30px;
+  grid-column: 1/3;
+  justify-content: space-around;
+}
+.navbar .menu {
+  grid-column: 3/7;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar a {
+  font-family: "Monument Extended", sans-serif;
+  margin: 3px;
+  font-size: 70%;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+  transition: all 0.5s ease;
+  justify-content: space-around;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar a:hover {
+  padding: 5px 10px;
+  background: white;
+  color: red;
+  border-radius: 15px;
+}
+
+footer {
+  background: #ff0000;
+  padding: 60px 0 30px 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+footer .contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+}
+footer .contenedor-footer .content-foo {
+  text-align: center;
+}
+footer .contenedor-footer .content-foo .imagen-footer {
+  width: 10%;
+}
+footer .contenedor-footer .content-foo p {
+  font-family: "Monument Extended", sans-serif;
+  margin: 5px;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  footer {
+    width: 100%;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.contenedor {
+  padding: 20px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.titulo {
+  color: red;
+  font-family: "Monument Extended", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+@media (max-width: 300px) {
+  .contenedor {
+    width: 100%;
+  }
+}
+h1 {
+  padding: 200px;
+}
+
+/*# sourceMappingURL=enviado.css.map */
